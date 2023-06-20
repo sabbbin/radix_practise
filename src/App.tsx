@@ -8,6 +8,7 @@ import { useState } from "react";
 import Item from "./Accordion/Item";
 import Trigger from "./Accordion/trigger";
 import Content from "./Accordion/content";
+import { Button, ButtonA, Buttona } from "./slot/slot";
 
 // This is a generic button, eg: from your design system
 
@@ -22,6 +23,17 @@ export default function App() {
   const [value, setValue] = useState("");
   return (
     <>
+      <Button aschild>
+        <a href="# " className="text-green-500">
+          {" "}
+          helof
+        </a>
+      </Button>
+
+      <Buttona>
+        <a href="# "> helo this is testing abc</a>
+      </Buttona>
+
       <Accordion.Root
         className="bg-mauve6   shadow-[0_2px_10px] shadow-black/5"
         type="single"
